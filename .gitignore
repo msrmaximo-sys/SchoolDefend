@@ -1,0 +1,71 @@
+# Configuración privada; la plantilla se versiona.
+.env
+.env.*
+!.env.example
+config.php
+config.local.php
+*.local.ini
+auth.json
+/SchoolDefend/includes/conexion.php
+!/SchoolDefend/config.example.php
+
+# Pruebas locales, respuestas HTTP, sesiones y capturas de desarrollo.
+.local/
+sessions/
+sess_*
+cookies*.txt
+logs/
+*.log
+error_log
+cache/
+tmp/
+temp/
+
+# Dependencias y resultados de herramientas (no son dependencias actuales).
+vendor/
+node_modules/
+.phpunit.cache/
+.phpunit.result.cache
+coverage/
+.php-cs-fixer.cache
+
+# Respaldos y volcados privados; conservar el SQL de instalación.
+backups/
+dumps/
+*.sql
+*.sql.gz
+*.sql.zip
+!/SchoolDefend/database/schooldefend.sql
+*.bak
+*.old
+*.orig
+*.tmp
+*.swp
+*.swo
+*~
+
+# Credenciales, certificados privados y ajustes de máquina.
+*.key
+*.pem
+*.p12
+*.pfx
+.aws/
+.codex/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Informe académico original: contiene nombres completos ampliados.
+# Conservado localmente como antecedente; README contiene la autoría acordada.
+/School Defend - Informe preeliminar.pdf
+
+# Instrucciones y contexto de herramientas de IA.
+AGENTS.md
+AGENTS.override.md
+CLAUDE.md
+GEMINI.md
+PROJECT.md
+project.md
